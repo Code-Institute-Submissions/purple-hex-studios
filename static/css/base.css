@@ -27,10 +27,16 @@ body {
     width: fit-content;
 }
 
+/* home */
+
 .start-creating-button {
     background: black;
     color: white;
     min-width: 260px;
+}
+
+.desk-pic {
+    background: url('/media/mix-desk.jpg');   
 }
 
 .btn-black {
