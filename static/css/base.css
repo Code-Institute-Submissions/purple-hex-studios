@@ -35,9 +35,17 @@ body {
     min-width: 260px;
 }
 
-.desk-pic {
-    background: url('/media/mix-desk.jpg');   
+.img-right {
+    height: 400px;
+    width: 500px;
+    margin-right:30px;
+    border: 2px solid #ffffff;
+    
 }
+
+/* .desk-pic {
+    background: url('/media/mix-desk.jpg');   
+} */
 
 .btn-black {
     background: black;
