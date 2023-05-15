@@ -15,7 +15,7 @@ def all_services(request):
     return render(request, 'services/services.html', context)
 
 
-def services_detail(request, product_id):
+def service_detail(request, product_id):
     """ A view to show individual product details """
 
     services = get_object_or_404(Product, pk=product_id)
