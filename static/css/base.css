@@ -43,10 +43,6 @@ body {
     
 }
 
-/* .desk-pic {
-    background: url('/media/mix-desk.jpg');   
-} */
-
 .btn-black {
     background: black;
     color: white;
@@ -69,6 +65,12 @@ body {
 .border-black {
     border: 1px solid black !important;
 }
+
+/* Services */
+.servicedetail-container {
+    background-color: #ffffff;
+}
+
 
 /* -------------------------------- Media Queries */
 
