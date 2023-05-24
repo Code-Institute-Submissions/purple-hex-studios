@@ -50,6 +50,9 @@ INSTALLED_APPS = [
     'services',
     'bag',
     'checkout',
+
+    # Other
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -64,6 +67,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'purple_hex.urls'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
     {
