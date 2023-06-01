@@ -1,1 +1,1 @@
-web: gunicorn purple_hex.wsgi:application
+web: gunicorn purple-hex-studios.wsgi
