@@ -30,8 +30,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG", False)
 
-ALLOWED_HOSTS = ['8000-thomg1-purplehexstudios-bavkvdh5lti.ws-eu97.gitpod.io', 'localhost']
-
+ALLOWED_HOSTS = []
+host = os.environ.get("HOST")
+if host:
+    ALLOWED_HOSTS.append(host)
 
 # Application definition
 
