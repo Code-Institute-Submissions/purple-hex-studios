@@ -3,6 +3,8 @@ from django.contrib import messages
 from django.db.models import Q
 from .models import Product, Category
 
+from .forms import ProductForm
+
 # Create your views here.
 
 def all_services(request):
@@ -54,16 +56,39 @@ def add_service(request):
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Successfully added product!')
+            messages.success(request, 'Successfully added service')
             return redirect(reverse('add_service'))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(request, 'Failed to add service. Please ensure the form is valid.')
     else:
         form = ProductForm()
         
     template = 'services/add_service.html'
     context = {
         'form': form,
+    }
+
+    return render(request, template, context)
+
+def edit_service(request, product_id):
+    """ Edit a service in the store """
+    service = get_object_or_404(Product, pk=product_id)
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES, instance=service)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated service')
+            return redirect(reverse('service_detail', args=[product.id]))
+        else:
+            messages.error(request, 'Failed to update service. Please ensure the form is valid.')
+    else:
+        form = ProductForm(instance=service)
+        messages.info(request, f'You are editing {product.name}')
+
+    template = 'services/edit_service.html'
+    context = {
+        'form': form,
+        'service': service,
     }
 
     return render(request, template, context)
