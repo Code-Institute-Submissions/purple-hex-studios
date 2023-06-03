@@ -47,3 +47,23 @@ def service_detail(request, product_id):
     }
 
     return render(request, 'services/service_detail.html', context)
+
+def add_service(request):
+    """ Add a product to the store """
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully added product!')
+            return redirect(reverse('add_service'))
+        else:
+            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+    else:
+        form = ProductForm()
+        
+    template = 'services/add_service.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
