@@ -63,7 +63,7 @@ def add_service(request):
         if form.is_valid():
             service = form.save()
             messages.success(request, 'Successfully added service')
-            return redirect(reverse('service_detail', args=[product.id]))
+            return redirect(reverse('service_detail', args=[service.id]))
         else:
             messages.error(request, 'Failed to add service. Please ensure the form is valid.')
     else:
@@ -110,7 +110,7 @@ def delete_service(request, product_id):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
-        
+
     service = get_object_or_404(Product, pk=product_id)
     service.delete()
     messages.success(request, 'Service deleted')
