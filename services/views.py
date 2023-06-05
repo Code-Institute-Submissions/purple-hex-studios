@@ -2,16 +2,16 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
-from .models import Product, Category
+from .models import Service, Category
 
-from .forms import ProductForm
+from .forms import ServiceForm
 
 # Create your views here.
 
 def all_services(request):
     """ A view to show all services, including sorting and search queries """
 
-    services = Product.objects.all()
+    services = Service.objects.all()
     query = None
     categories = None
 
@@ -43,7 +43,7 @@ def all_services(request):
 def service_detail(request, product_id):
     """ A view to show individual product details """
 
-    service = get_object_or_404(Product, pk=product_id)
+    service = get_object_or_404(Service, pk=service_id)
 
     context = {
         'service': service,
@@ -59,7 +59,7 @@ def add_service(request):
         return redirect(reverse('home'))
 
     if request.method == 'POST':
-        form = ProductForm(request.POST, request.FILES)
+        form = ServiceForm(request.POST, request.FILES)
         if form.is_valid():
             service = form.save()
             messages.success(request, 'Successfully added service')
@@ -67,7 +67,7 @@ def add_service(request):
         else:
             messages.error(request, 'Failed to add service. Please ensure the form is valid.')
     else:
-        form = ProductForm()
+        form = ServiceForm()
         
     template = 'services/add_service.html'
     context = {
@@ -78,13 +78,13 @@ def add_service(request):
     return render(request, template, context)
 
 @login_required
-def delete_service(request, product_id):
+def delete_service(request, service_id):
     """ Delete a product from the store """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
 
-    service = get_object_or_404(Product, pk=product_id)
+    service = get_object_or_404(Service, pk=service_id)
     service.delete()
     messages.success(request, 'Service deleted')
     return redirect(reverse('services'))

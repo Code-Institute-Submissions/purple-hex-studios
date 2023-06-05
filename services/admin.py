@@ -1,9 +1,9 @@
 from django.contrib import admin
-from .models import Product, Category
+from .models import Service, Category
 
 # Register your models here.
 
-class ProductAdmin(admin.ModelAdmin):
+class ServiceAdmin(admin.ModelAdmin):
     list_display = (
         'name',
         'category',
@@ -19,5 +19,5 @@ class CategoryAdmin(admin.ModelAdmin):
         'name',
     )
 
-admin.site.register(Product, ProductAdmin)
+admin.site.register(Service, ServiceAdmin)
 admin.site.register(Category, CategoryAdmin)
