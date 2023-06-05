@@ -72,34 +72,7 @@ def add_service(request):
     template = 'services/add_service.html'
     context = {
         'form': form,
-    }
 
-    return render(request, template, context)
-
-@login_required
-def edit_service(request, product_id):
-    """ Edit a service in the store """
-    if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only store owners can do that.')
-        return redirect(reverse('home'))
-
-    service = get_object_or_404(Product, pk=product_id)
-    if request.method == 'POST':
-        form = ProductForm(request.POST, request.FILES, instance=service)
-        if form.is_valid():
-            form.save()
-            messages.success(request, 'Successfully updated service')
-            return redirect(reverse('service_detail', args=[product.id]))
-        else:
-            messages.error(request, 'Failed to update service. Please ensure the form is valid.')
-    else:
-        form = ProductForm(instance=service)
-        messages.info(request, f'You are editing {product.name}')
-
-    template = 'services/edit_service.html'
-    context = {
-        'form': form,
-        'service': service,
     }
 
     return render(request, template, context)
