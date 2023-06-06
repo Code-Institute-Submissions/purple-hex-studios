@@ -49,27 +49,27 @@ I used [coolors.co](https://coolors.co/e84610-009fe3-4a4a4f-445261-d63649-e6ecf0
 
 ### New Site Users
 
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
+- As a new site user, I would like to easily navigate the site, so that I can explore what is available.
+- As a new site user, I would like to browse what services are on offer, so that I can consider a purchase.
+- As a new site user, I would like to easily make a purchase, so that I can progress towards what I want.
+- As a new site user, I would like to enjoy the original aesthetic of the application, so that I can return and shop again.
+
 
 ### Returning Site Users
 
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
+- As a returning site user, I would like to save my details, so that I can make quicker purchases in future.
+- As a returning site user, I would like to contact the site, so that I can answer any queries.
+- As a returning site user, I would like to explore another cateogory of service, so that I can expand what I'm creating.
+- As a returning site user, I would like to explore the sites previous work, so that I can inform my future decisions.
+
 
 ### Site Admin
 
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
+- As a site administrator, I should be able to add new services to my site, so that I can interest new customers.
+- As a site administrator, I should be able to ammend existing services, so that I can meet the needs of the studio.
+- As a site administrator, I should be able to delete exisiting services, so that I can meet the needs of the studio.
+- As a site administrator, I should be able to keep track of my orders, so that I can analyse the data.
+
 
 ## Wireframes
 
@@ -204,7 +204,7 @@ Feel free to delete any unused items below as necessary.
 - [PostgreSQL](https://www.postgresql.org) used as the relational database management.
 - [ElephantSQL](https://www.elephantsql.com) used as the Postgres database.
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
-- [Stripe](https://stripe.com) used for online secure payments of ecommerce products/services.
+- [Stripe](https://stripe.com) used for online secure payments of ecommerce Services/services.
 - [AWS S3](https://aws.amazon.com/s3) used for online static file storage.
 
 ## Database Design
@@ -219,7 +219,7 @@ Using your defined models (one example below), create an ERD with the relationsh
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ```python
-class Product(models.Model):
+class Service(models.Model):
     category = models.ForeignKey(
         "Category", null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
@@ -248,11 +248,11 @@ A couple recommendations for building free ERDs:
 
 ⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
 
-Using Markdown formatting to represent an example ERD table using the Product model above:
+Using Markdown formatting to represent an example ERD table using the Service model above:
 
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
-- Table: **Product**
+- Table: **Service**
 
     | **PK** | **id** (unique) | Type | Notes |
     | --- | --- | --- | --- |
@@ -531,7 +531,7 @@ os.environ.setdefault("STRIPE_PUBLIC_KEY", "user's own value")
 os.environ.setdefault("STRIPE_SECRET_KEY", "user's own value")
 os.environ.setdefault("STRIPE_WH_SECRET", "user's own value")
 
-# local environment only (do not include these in production/deployment!)
+# local environment only (do not include these in Serviceion/deployment!)
 os.environ.setdefault("DEBUG", "True")
 ```
 
@@ -633,7 +633,7 @@ by sending yourself the following command: `!freemedia`.
 | --- | --- | --- | --- |
 | [Pexels](https://www.pexels.com) | entire site | image | favicon on all pages |
 | [Lorem Picsum](https://picsum.photos) | home page | image | hero image background |
-| [Unsplash](https://unsplash.com) | product page | image | sample of fake products |
+| [Unsplash](https://unsplash.com) | Service page | image | sample of fake Services |
 | [Pixabay](https://pixabay.com) | gallery page | image | group of photos for gallery |
 | [Wallhere](https://wallhere.com) | footer | image | background wallpaper image in the footer |
 | [This Person Does Not Exist](https://thispersondoesnotexist.com) | testimonials | image | headshots of fake testimonial images |
