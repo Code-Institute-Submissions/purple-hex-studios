@@ -40,7 +40,7 @@ def all_services(request):
     return render(request, 'services/services.html', context)
 
 
-def service_detail(request, Service_id):
+def service_detail(request, service_id):
     """ A view to show individual Service details """
 
     service = get_object_or_404(Service, pk=service_id)
@@ -56,7 +56,7 @@ def add_service(request):
     """ Add a Service to the store """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
-        return redirect(reverse('home'))
+        return redirect(reverse('services'))
 
     if request.method == 'POST':
         form = ServiceForm(request.POST, request.FILES)
@@ -82,9 +82,37 @@ def delete_service(request, service_id):
     """ Delete a Service from the store """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
-        return redirect(reverse('home'))
+        return redirect(reverse('services'))
 
     service = get_object_or_404(Service, pk=service_id)
     service.delete()
     messages.success(request, 'Service deleted')
     return redirect(reverse('services'))
+
+@login_required
+def edit_service(request):
+    """ Edit a service in the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('service_detail'))
+
+    service = get_object_or_404(Service, pk=service_id)
+    if request.method == 'POST':
+        form = ServiceForm(request.POST, request.FILES, instance=service)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated service')
+            return redirect(reverse('service_detail', args=[service_id]))
+        else:
+            messages.error(request, 'Failed to update service. Please ensure the form is valid.')
+    else:
+        form = ServiceForm(instance=service)
+        messages.info(request, f'You are editing {service.name}')
+
+    template = 'services/edit_service.html'
+    context = {
+        'form': form,
+        'service': service,
+    }
+
+    return render(request, template, context)
