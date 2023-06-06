@@ -90,7 +90,7 @@ def delete_service(request, service_id):
     return redirect(reverse('services'))
 
 @login_required
-def edit_service(request):
+def edit_service(request, service_id):
     """ Edit a service in the store """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
