@@ -33,11 +33,11 @@ def checkout(request):
             order = order_form.save()
             for item_id, item_data in bag.items():
                 try:
-                    product = Product.objects.get(id=item_id)
+                    service = Service.objects.get(id=item_id)
                     if isinstance(item_data, int):
                         order_line_item = OrderLineItem(
                             order=order,
-                            product=product,
+                            service=service,
                             quantity=item_data,
                         )
                         order_line_item.save()
@@ -45,13 +45,13 @@ def checkout(request):
                         for size, quantity in item_data['items_by_size'].items():
                             order_line_item = OrderLineItem(
                                 order=order,
-                                product=product,
+                                service=service,
                                 quantity=quantity,
                             )
                             order_line_item.save()
-                except Product.DoesNotExist:
+                except Service.DoesNotExist:
                     messages.error(request, (
-                        "One of the products in your bag wasn't found in our database. "
+                        "One of the Services in your bag wasn't found in our database. "
                         "Please call us for assistance!")
                     )
                     order.delete()

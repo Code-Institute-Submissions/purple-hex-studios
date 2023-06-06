@@ -580,10 +580,10 @@ Below are the results from the various apps on my application that I've tested:
 | Home | test_models.py | 89% | ![screenshot](documentation/py-test-home-models.png) |
 | Home | test_urls.py | 100% | ![screenshot](documentation/py-test-home-urls.png) |
 | Home | test_views.py | 71% | ![screenshot](documentation/py-test-home-views.png) |
-| Products | test_forms.py | 99% | ![screenshot](documentation/py-test-products-forms.png) |
-| Products | test_models.py | 89% | ![screenshot](documentation/py-test-products-models.png) |
-| Products | test_urls.py | 100% | ![screenshot](documentation/py-test-products-urls.png) |
-| Products | test_views.py | 71% | ![screenshot](documentation/py-test-products-views.png) |
+| Services | test_forms.py | 99% | ![screenshot](documentation/py-test-Services-forms.png) |
+| Services | test_models.py | 89% | ![screenshot](documentation/py-test-Services-models.png) |
+| Services | test_urls.py | 100% | ![screenshot](documentation/py-test-Services-urls.png) |
+| Services | test_views.py | 71% | ![screenshot](documentation/py-test-Services-views.png) |
 | Profiles | test_forms.py | 99% | ![screenshot](documentation/py-test-profiles-forms.png) |
 | Profiles | test_models.py | 89% | ![screenshot](documentation/py-test-profiles-models.png) |
 | Profiles | test_urls.py | 100% | ![screenshot](documentation/py-test-profiles-urls.png) |

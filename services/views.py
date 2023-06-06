@@ -40,8 +40,8 @@ def all_services(request):
     return render(request, 'services/services.html', context)
 
 
-def service_detail(request, product_id):
-    """ A view to show individual product details """
+def service_detail(request, Service_id):
+    """ A view to show individual Service details """
 
     service = get_object_or_404(Service, pk=service_id)
 
@@ -53,7 +53,7 @@ def service_detail(request, product_id):
 
 @login_required
 def add_service(request):
-    """ Add a product to the store """
+    """ Add a Service to the store """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
@@ -79,7 +79,7 @@ def add_service(request):
 
 @login_required
 def delete_service(request, service_id):
-    """ Delete a product from the store """
+    """ Delete a Service from the store """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
