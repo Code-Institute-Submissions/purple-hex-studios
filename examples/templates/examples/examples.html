@@ -18,36 +18,32 @@
                 <hr class="w-50 mb-1">
             </div>
         </div>
-        <div class="row">
-            <div class="service-container col-10 offset-1">
-                <div class="row mt-1 mb-2"></div>
-                <div class="row">
-                    {% for example in examples %}
-                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card h-100 border-0">
-                                <div class="card-body pb-0">
-                                    <p class="mb-0">{{ example.name }}</p>
-                                </div>                             
-                            </div>
+        <!-- carousel test -->
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                {% for example in examples|slice:":3" %}
+                {% if forloop.first %}
+                <div class="carousel-item active">
+                {% else %}
+                    <div class="item">
+                {% endif %} 
+                        <img class="d-block w-100" src="{{ example.image.url }}" alt="{{ example.name }}">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>{{ example.name }}</h5>
                         </div>
-                        {% if forloop.counter|divisibleby:2 %}
-                        <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
-                            <hr>
-                        </div>
-                        {% endif %}
-                        {% if forloop.counter|divisibleby:3 %}
-                            <div class="col-12 d-none d-lg-block d-xl-none mb-5">
-                                <hr>
-                            </div>
-                        {% endif %}
-                        {% if forloop.counter|divisibleby:4 %}
-                            <div class="col-12 d-none d-xl-block mb-5">
-                                <hr>
-                            </div>
-                        {% endif %}
-                    {% endfor %}
+                    </div>
                 </div>
+        
             </div>
-        </div>
+                {% endfor %}
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
     </div>
 {% endblock %}
