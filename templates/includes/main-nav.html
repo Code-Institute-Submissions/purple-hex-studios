@@ -1,31 +1,64 @@
-<div class="collapse navbar-collapse" id="main-nav">
-    <ul class="navbar-nav w-auto mx-auto">
-        <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="{% url 'services' %}" id="all-Services-link" aria-haspopup="true" aria-expanded="false">
-                All Services
+<nav class="navbar navbar-expand-lg navbar-light text-white" id="main-nav">
+    <a class="navbar-brand" href="{% url 'home' %}">Purple Hex</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Account
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            {% if request.user.is_authenticated %}
+                {% if request.user.is_superuser %}
+                    <a href="{% url 'add_service' %}" class="dropdown-item">Service Management</a>
+                {% endif %}
+                    <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                    <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                {% else %}
+                    <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                    <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+            {% endif %}
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Services
             </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a href="{% url 'services' %}" class="dropdown-item">All Services</a>
+                      <a href="{% url 'services' %}?category=Film-and-TV" class="dropdown-item">Film & TV</a>
+                      <a href="{% url 'services' %}?category=Mixing-and-Mastering" class="dropdown-item">Mixing & Mastering</a>
+                      <a href="{% url 'services' %}?category=Tutorials" class="dropdown-item">Tutorials</a>
+            </div>
+          </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
         </li>
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="{% url 'services' %}?category=Film-and-TV" id="film-link" aria-haspopup="true" aria-expanded="false">
-                Film & TV
-            </a>
+            <a class="nav-link" href="{% url 'examples' %}">Examples</a>
         </li>
-
-        <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-white mr-5" href="{% url 'services' %}?category=Mixing-and-Mastering" id="mix-link" aria-haspopup="true" aria-expanded="false">
-                Mixing & Mastering
+        <!-- <li class="list-inline-item">
+            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-white{% endif %} nav-link" href="{% url 'view_bag' %}">
+                <div class="text-center">
+                    <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                    <p class="my-0">
+                        {% if grand_total %}
+                            £{{ grand_total|floatformat:2 }}
+                        {% else %}
+                            £0.00
+                        {% endif %}
+                    </p>
+                </div>
             </a>
-        </li>
-        <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-white" href="{% url 'services' %}?category=Tutorials" id="tutorials-link" aria-haspopup="true" aria-expanded="false">
-                Tutorials
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link text-white" href="{% url 'contact' %}" id="contact-link" aria-haspopup="true" aria-expanded="false">
-                Contact
-            </a>
-        </li>
-    </ul>
-</div>
+        </li> -->
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
 
