@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light text-white" id="main-nav">
-    <a class="navbar-brand" href="{% url 'home' %}">Purple Hex</a>
+    <a class="navbar-brand text-white" href="{% url 'home' %}"><strong>Purple Hex</strong></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -7,7 +7,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Account
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -24,7 +24,7 @@
           </div>
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Services
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -35,30 +35,27 @@
             </div>
           </li>
         <li class="nav-item">
-            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+            <a class="nav-link text-white" href="{% url 'contact' %}">Contact</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{% url 'examples' %}">Examples</a>
+            <a class="nav-link text-white" href="{% url 'examples' %}">Examples</a>
         </li>
-        <!-- <li class="list-inline-item">
-            <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-white{% endif %} nav-link" href="{% url 'view_bag' %}">
-                <div class="text-center">
-                    <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                    <p class="my-0">
-                        {% if grand_total %}
-                            £{{ grand_total|floatformat:2 }}
-                        {% else %}
-                            £0.00
-                        {% endif %}
-                    </p>
-                </div>
-            </a>
-        </li> -->
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
     </div>
+    <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-white{% endif %} nav-link"
+      href="{% url 'view_bag' %}">
+      <div class="text-center">
+        <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+        <p class="my-0">
+          {% if grand_total %}
+          £{{ grand_total|floatformat:2 }}
+          {% else %}
+          £0.00
+          {% endif %}
+        </p>
+      </div>
+    </a>
   </nav>
+
+
 

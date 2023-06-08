@@ -10,10 +10,6 @@ body {
     font-family: 'Playfair Display';
 }
 
-#main-nav {
-    color: #ffffff;
-}
-
 /* from Bulma */
 .icon {
     align-items: center;

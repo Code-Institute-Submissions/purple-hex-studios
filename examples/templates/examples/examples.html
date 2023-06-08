@@ -20,7 +20,7 @@
     </div>
 
     <!-- carousel test -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel slide container" data-ride="carousel">
         <ol class="carousel-indicators">
             {% for example in examples|slice:":3" %}
                 <li data-target="#carouselExampleCaptions" data-slide-to="{{ forloop.counter0 }}" {% if forloop.first %}class="active"{% endif %}></li>
