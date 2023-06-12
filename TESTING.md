@@ -27,27 +27,11 @@ You are not required to validate external libraries/frameworks, such as imported
 
 I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-- If you are copying/pasting your HTML code, use this link: https://validator.w3.org/#validate_by_input
-- (*recommended*) If you are using the live deployed site pages, use this link: https://validator.w3.org/#validate_by_uri
-
-It's recommended to validate the live pages (each of them) using the deployed URL.
-This will give you a custom URL as well, which you can use on your testing documentation.
-It makes it easier to return back to a page to validate it again in the future.
-The URL will look something like this:
-
-- https://validator.w3.org/nu/?doc=https%3A%2F%2FThomG1.github.io%2Fpurple-hex-studios%2Findex.html
-
-Sample HTML code validation documentation (tables are extremely helpful!):
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
 | Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FThomG1.github.io%2Fpurple-hex-studios%2Findex.html) | ![screenshot](documentation/html-validation-home.png) | Section lacks header h2-h6 warning |
 | Contact | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FThomG1.github.io%2Fpurple-hex-studios%2Fcontact.html) | ![screenshot](documentation/html-validation-contact.png) | obsolete iframe warnings |
-| Quiz | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FThomG1.github.io%2Fpurple-hex-studios%2Fquiz.html) | ![screenshot](documentation/html-validation-quiz.png) | Pass: No Errors |
+| Services | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FThomG1.github.io%2Fpurple-hex-studios%2Fquiz.html) | ![screenshot](documentation/html-validation-quiz.png) | Pass: No Errors |
 | Add Blog | n/a | ![screenshot](documentation/html-validation-add-blog.png) | Duplicate IDs found, and fixed |
 | Checkout | n/a | ![screenshot](documentation/html-validation-checkout.png) | Pass: No Errors |
 | x | x | x | repeat for all remaining HTML files |
@@ -387,12 +371,23 @@ Defensive programming was manually tested with the below user acceptance testing
 | --- | --- | --- | --- | --- |
 | Home Page | | | | |
 | | Click on Logo | Redirection to Home page | Pass | |
-| | Click on Home link in navbar | Redirection to Home page | Pass | |
-| Gallery Page | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | |
-| | Load gallery images | All images load as expected | Pass | |
-| Contact Page | | | | |
+| | Click on account dropdown in navbar | Displays dropdown | Pass | |
+| | Click on account register in navbar | Directs to register page | Pass | |
+| | Click on account login in navbar | Directs to login page | Pass | |
+| | Click on account management in navbar (if superuser) | Directs to add service page | Pass | |
+| | Click on Services dropdown in navbar | Displays services dropdown filtering  | Pass | |
+| | Click on all services in navbar | Directs to all services page | Pass | |
+| | Click on film & tv in navbar | Filters film and tv services | Pass | |
+| | Click on tutorials in navbar | Filters tutorials services | Pass | |
+| | Click on mixing & mastering in navbar | Filters mixing & mastering services | Pass | |
+| | Click examples on navbar | Directs to examples page | Pass | |
 | | Click on Contact link in navbar | Redirection to Contact page | Pass | |
+| | Click on bag in navbar | Directs to bag | Pass | |
+| | Click on start creating button | Redirects to all services | Pass | |
+| Examples Page | | | | |
+| | Load images | All images load as expected | Pass | |
+| | Use carousel next and previous buttons | works as expected | Pass | |
+| Contact Page | | | | |
 | | Enter first/last name | Field will accept freeform text | Pass | |
 | | Enter valid email address | Field will only accept email address format | Pass | |
 | | Enter message in textarea | Field will accept freeform text | Pass | |
@@ -414,13 +409,8 @@ Defensive programming was manually tested with the below user acceptance testing
 | Profile | | | | |
 | | Click on Profile button | User will be redirected to the Profile page | Pass | |
 | | Click on the Edit button | User will be redirected to the edit profile page | Pass | |
-| | Click on the My Orders link | User will be redirected to the My Orders page | Pass | |
 | | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |
 
-⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
-
-Repeat for all other tests, as applicable to your own site.
-The aforementioned tests are just an example of a few different project scenarios.
 
 🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
