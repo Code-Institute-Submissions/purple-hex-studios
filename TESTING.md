@@ -384,6 +384,27 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Click on Contact link in navbar | Redirection to Contact page | Pass | |
 | | Click on bag in navbar | Directs to bag | Pass | |
 | | Click on start creating button | Redirects to all services | Pass | |
+| Services Page | | | | |
+| | Load services | All services load as expected | Pass | |
+| | Click on service | Redirect to service detail page | Pass | |
+| | Click on edit (if superuser) | Redirect to edit service page | Pass | |
+| | Click on delete (if superuser) | Deletes service| Pass | |
+| Services Details Page | | | | |
+| | Load service details | All details load as expected | Pass | |
+| | Select quantity | Allows user to select quantity | Pass | |
+| | Click on edit (if superuser) | Redirect to edit service page | Pass | |
+| | Click on delete (if superuser) | Deletes service| Pass | |
+| | Click add to bag | Adds service to bag | Pass | |
+| | Click more | Redirects to all services | Pass | |
+| Edit Services Page | | | | |
+| | Edit Category | Allow user to edit category | Pass | |
+| | Edit Name | Allow user to edit name | Pass | |
+| | Edit Description | Allow user to edit description | Pass | |
+| | Edit Price | Allow user to edit price | Pass | |
+| | Edit image url | Allow user to edit image url | Pass | |
+| | Edit image upload | Allow user to upload new image| Pass | |
+| | Click update service | Updates service / redirects to service detail page | Pass | |
+| | Click cancel | Redirects to all services page | Pass | |
 | Examples Page | | | | |
 | | Load images | All images load as expected | Pass | |
 | | Use carousel next and previous buttons | works as expected | Pass | |
