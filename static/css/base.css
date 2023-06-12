@@ -27,6 +27,10 @@ body {
     width: fit-content;
 }
 
+nav.bg-dark {
+    background-color: rgba(52, 58, 64, 0.90) !important;
+}
+
 /* home */
 
 .start-creating-button {
