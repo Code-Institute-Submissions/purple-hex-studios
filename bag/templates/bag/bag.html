@@ -22,14 +22,13 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row general-bg">
             <div class="col">
                 {% if bag_items %}
                     <div class="table-responsive rounded">
                         <table class="table table-sm table-borderless text-white">
-                            <thead class="text-black">
+                            <thead class="text-white">
                                 <tr>
-                                    <th scope="col">Service Info</th>
                                     <th scope="col"></th>
                                     <th scope="col">Price</th>
                                     <th scope="col">Qty</th>
@@ -102,11 +101,11 @@
                             </tr>
                             <tr>
                                 <td colspan="5" class="text-right">
-                                    <a href="{% url 'services' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                                    <a href="{% url 'services' %}" class="btn btn-black rounded-0 btn-lg">
                                         <span class="icon">
                                             <i class="fas fa-chevron-left"></i>
                                         </span>
-                                        <span class="text-uppercase">Keep Shopping</span>
+                                        <span class="text-uppercase ">Keep Shopping</span>
                                     </a>
                                     <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">
                                         <span class="text-uppercase">Secure Checkout</span>
