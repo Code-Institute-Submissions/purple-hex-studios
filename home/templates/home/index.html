@@ -18,12 +18,13 @@
                     Contemporary creative studios
                 </h1>
                 <div class="my-5">
-                    <h4>
-                        <a href="{% url 'services' %}" class="start-creating-button btn btn-lg rounded-0 text-uppercase py-3">Start Creating</a>
-                    </h4>
+                    <form method="GET" action="{% url 'services' %}" class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-black my-2 my-sm-0" type="submit">Search</button>
+                    </form>
                 </div>
             </div>
-            <img src="{% static 'static/images/elijah-merrell--qFWOJEEQh4-unsplash.jpg' %}" class="img-right" alt="mix desk">
+            <img src="{% static 'static/images/elijah-merrell--qFWOJEEQh4-unsplash.jpg' %}" class="img-right" alt="studio">
         </div>
     </div>
     
