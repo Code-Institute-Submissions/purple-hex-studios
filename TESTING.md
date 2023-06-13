@@ -219,7 +219,30 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | Checkout signals.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/checkout/signals.py) | ![screenshot](documentation/py-validation-checkout-signals.png) | Pass: No Errors |
 | Checkout urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/checkout/urls.py) | ![screenshot](documentation/py-validation-checkout-urls.png) | Pass: No Errors |
 | Checkout views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/checkout/views.py) | ![screenshot](documentation/py-validation-checkout-views.png) | Pass: No Errors |
-
+| Profiles admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/profiles/admin.py) | ![screenshot](documentation/py-validation-profiles-admin.png) | Pass: No Errors |
+| Profiles apps.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/profiles/apps.py) | ![screenshot](documentation/py-validation-profiles-apps.png) | Pass: No Errors |
+| Profiles forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/profiles/forms.py) | ![screenshot](documentation/py-validation-profiles-forms.png) | Pass: No Errors |
+| Profiles models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/profiles/models.py) | ![screenshot](documentation/py-validation-profiles-models.png) | Pass: No Errors |
+| Profiles urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/profiles/urls.py) | ![screenshot](documentation/py-validation-profiles-urls.png) | Pass: No Errors |
+| Profiles views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/profiles/views.py) | ![screenshot](documentation/py-validation-profiles-views.png) | Pass: No Errors |
+| Home admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/home/admin.py) | ![screenshot](documentation/py-validation-home-admin.png) | Pass: No Errors |
+| Home apps.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/home/apps.py) | ![screenshot](documentation/py-validation-home-apps.png) | Pass: No Errors |
+| Home forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/home/forms.py) | ![screenshot](documentation/py-validation-home-forms.png) | Pass: No Errors |
+| Home models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/home/models.py) | ![screenshot](documentation/py-validation-home-models.png) | Pass: No Errors |
+| Home urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/home/urls.py) | ![screenshot](documentation/py-validation-home-urls.png) | Pass: No Errors |
+| Home views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/home/views.py) | ![screenshot](documentation/py-validation-homes-views.png) | Pass: No Errors |
+| Contact admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/contact/admin.py) | ![screenshot](documentation/py-validation-contact-admin.png) | Pass: No Errors |
+| Contact apps.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/contact/apps.py) | ![screenshot](documentation/py-validation-contact-apps.png) | Pass: No Errors |
+| Contact forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/contact/forms.py) | ![screenshot](documentation/py-validation-contact-forms.png) | Pass: No Errors |
+| Contact models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/contact/models.py) | ![screenshot](documentation/py-validation-contact-models.png) | Pass: No Errors |
+| Contact urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/contact/urls.py) | ![screenshot](documentation/py-validation-contact-urls.png) | Pass: No Errors |
+| Contact views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/contact/views.py) | ![screenshot](documentation/py-validation-contact-views.png) | Pass: No Errors |
+| Examples admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/examples/admin.py) | ![screenshot](documentation/py-validation-examples-admin.png) | Pass: No Errors |
+| Examples apps.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/examples/apps.py) | ![screenshot](documentation/py-validation-examples-apps.png) | Pass: No Errors |
+| Examples forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/examples/forms.py) | ![screenshot](documentation/py-validation-examples-forms.png) | Pass: No Errors |
+| Examples models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/examples/models.py) | ![screenshot](documentation/py-validation-examples-models.png) | Pass: No Errors |
+| Examples urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/examples/urls.py) | ![screenshot](documentation/py-validation-examples-urls.png) | Pass: No Errors |
+| Examples views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/examples/views.py) | ![screenshot](documentation/py-validation-examples-views.png) | Pass: No Errors |
 
 
 
