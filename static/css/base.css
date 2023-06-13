@@ -7,7 +7,7 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Playfair Display';
+    font-family: chakra petch;
 }
 
 .general-bg {
@@ -44,9 +44,10 @@ nav.bg-dark {
 }
 
 .img-right {
-    height: 400px;
-    width: 500px;
+    height: 800px;
+    width: 1050px;
     margin-right:30px;
+    margin-left: 30px;
     border: 2px solid #ffffff;
     
     
