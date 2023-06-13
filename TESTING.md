@@ -212,8 +212,17 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | Bag models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/bag/models.py) | ![screenshot](documentation/py-validation-bag-models.png) | Pass: No Errors |
 | Bag urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/bag/urls.py) | ![screenshot](documentation/py-validation-bag-urls.png) | Pass: No Errors |
 | Bag views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/bag/views.py) | ![screenshot](documentation/py-validation-bag-views.png) | Pass: No Errors |
-| Checkout urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/checkout/urls.py) | ![screenshot](documentation/py-validation-checkout-urls.png) | W292 no newline at end of file |
-| Profiles models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/profiles/models.py) | ![screenshot](documentation/py-validation-profiles-models.png) | Pass: No Errors |
+| Checkout admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/checkout/admin.py) | ![screenshot](documentation/py-validation-checkout-admin.png) | Pass: No Errors |
+| Checkout apps.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/checkout/apps.py) | ![screenshot](documentation/py-validation-checkout-apps.png) | Pass: No Errors |
+| Checkout forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/checkout/forms.py) | ![screenshot](documentation/py-validation-checkout-forms.png) | Pass: No Errors |
+| Checkout models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/checkout/models.py) | ![screenshot](documentation/py-validation-checkout-models.png) | Pass: No Errors |
+| Checkout signals.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/checkout/signals.py) | ![screenshot](documentation/py-validation-checkout-signals.png) | Pass: No Errors |
+| Checkout urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/checkout/urls.py) | ![screenshot](documentation/py-validation-checkout-urls.png) | Pass: No Errors |
+| Checkout views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/checkout/views.py) | ![screenshot](documentation/py-validation-checkout-views.png) | Pass: No Errors |
+
+
+
+
 | x | x | x | repeat for all remaining Python files |
 
 **IMPORTANT**: Django settings.py
