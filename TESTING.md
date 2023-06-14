@@ -406,8 +406,7 @@ from the respective feature.
 | As a returning site user, I would like to save my details, so that I can make quicker purchases in future. | ![screenshot](documentation/feature05.png) |
 | As a returning site user, I would like to contact the site, so that I can answer any queries. | ![screenshot](documentation/feature06.png) |
 | As a returning site user, I would like to explore another cateogory of service, so that I can expand what I'm creating. | ![screenshot](documentation/feature07.png) |
-| As a returning site user, I would like to explore the sites previous work, so that I can inform my future decisions.
- | ![screenshot](documentation/feature08.png) |
+| As a returning site user, I would like to explore the sites previous work, so that I can inform my future decisions.| ![screenshot](documentation/feature08.png) |
 | As a site administrator, I should be able to add new services to my site, so that I can interest new customers. | ![screenshot](documentation/feature09.png) |
 | As a site administrator, I should be able to ammend existing services, so that I can meet the needs of the studio. | ![screenshot](documentation/feature10.png) |
 | As a site administrator, I should be able to delete exisiting services, so that I can meet the needs of the studio. | ![screenshot](documentation/feature11.png) |
