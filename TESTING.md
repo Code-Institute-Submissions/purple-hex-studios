@@ -29,20 +29,19 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 | Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FThomG1.github.io%2Fpurple-hex-studios%2Findex.html) | ![screenshot](documentation/html-validation-home.png) | Pass: No Errors |
+| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpurple-hex-studios.herokuapp.com) | ![screenshot](documentation/html-validation-home.png) | Pass: No Errors |
 | Contact | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FThomG1.github.io%2Fpurple-hex-studios%2Fcontact.html) | ![screenshot](documentation/html-validation-contact.png) | Pass: No Errors |
-| Services | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FThomG1.github.io%2Fpurple-hex-studios%2Fquiz.html) | ![screenshot](documentation/html-validation-services.png) | Pass: No Errors |
-| Service detail  | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FThomG1.github.io%2Fpurple-hex-studios%2Fquiz.html) | ![screenshot](documentation/html-validation-service-detail.png) | Pass: No Errors |
+| Services | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpurple-hex-studios.herokuapp.com%2Fservices%2F) | ![screenshot](documentation/html-validation-services.png) | Pass: No Errors |
+| Service detail  | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpurple-hex-studios.herokuapp.com%2Fservices%2Fdetail%2F7%2F) | ![screenshot](documentation/html-validation-service-detail.png) | Pass: No Errors |
 | Edit Service  | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FThomG1.github.io%2Fpurple-hex-studios%2Fquiz.html) | ![screenshot](documentation/html-validation-edit-service.png) | Pass: No Errors |
 | Add Service | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FThomG1.github.io%2Fpurple-hex-studios%2Fquiz.html) | ![screenshot](documentation/html-validation-add-service.png) | Pass: No Errors |
-| Examples | n/a | ![screenshot](documentation/html-validation-examples.png) | Pass: No Errors |
+| Examples | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpurple-hex-studios.herokuapp.com%2Fexamples%2F)| ![screenshot](documentation/html-validation-examples.png) | Pass: No Errors |
 | Checkout | n/a | ![screenshot](documentation/html-validation-checkout.png) | Pass: No Errors |
 | Checkout Success | n/a | ![screenshot](documentation/html-validation-checkout-success.png) | Pass: No Errors |
-| Bag | n/a | ![screenshot](documentation/html-validation-bag.png) | Pass: No Errors |
+| Bag | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpurple-hex-studios.herokuapp.com%2Fbag%2F) | ![screenshot](documentation/html-validation-bag.png) | Pass: No Errors |
 | Profile | n/a | ![screenshot](documentation/html-validation-profile.png) | Pass: No Errors |
-| Login | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FThomG1.github.io%2Fpurple-hex-studios%2Findex.html) | ![screenshot](documentation/html-validation-login.png) | Pass: No Errors |
-| Logout | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FThomG1.github.io%2Fpurple-hex-studios%2Findex.html) | ![screenshot](documentation/html-validation-logout.png) | Pass: No Errors |
-| Sign Up | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FThomG1.github.io%2Fpurple-hex-studios%2Findex.html) | ![screenshot](documentation/html-validation-signup.png) | Pass: No Errors |
+| Login | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpurple-hex-studios.herokuapp.com%2Faccounts%2Flogin%2F) | ![screenshot](documentation/html-validation-login.png) | Pass: No Errors |
+| Sign Up | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpurple-hex-studios.herokuapp.com%2Faccounts%2Fsignup%2F) | ![screenshot](documentation/html-validation-signup.png) | Pass: No Errors |
 | x | x | x | repeat for all remaining HTML files |
 
 ⚠️⚠️⚠️⚠️⚠️ START OF NOTES (to be deleted) ⚠️⚠️⚠️⚠️⚠️
