@@ -170,16 +170,17 @@ nav.bg-dark {
   footer {
     margin: 0;
     background-color: rgba(52, 58, 64, 0.90) !important;
+    height: 
 }
 
 .social-links {
     padding-bottom: 15px;
+    margin-bottom:0;
 }
 
 .social-links li a i {
     width: 42px;
-
-    /* padding: 12px 0; */
+    margin-bottom:0;
     font-size: 30px;
     line-height: 7px;
     text-align: center;
@@ -192,7 +193,9 @@ nav.bg-dark {
 
 .social-links li a i:hover {
     background-color: rgba(52, 58, 64, 0.90) !important;
-    border-bottom: 3px solid #fff;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 15px;
+    /* margin-bottom:0; */
 }
 
 #footer-details {
