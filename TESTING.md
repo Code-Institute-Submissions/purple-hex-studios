@@ -19,8 +19,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | Edit Service  | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FThomG1.github.io%2Fpurple-hex-studios%2Fquiz.html) | ![screenshot](documentation/html-validation-edit-service.png) | Pass: No Errors |
 | Add Service | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2FThomG1.github.io%2Fpurple-hex-studios%2Fquiz.html) | ![screenshot](documentation/html-validation-add-service.png) | Pass: No Errors |
 | Examples | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpurple-hex-studios.herokuapp.com%2Fexamples%2F)| ![screenshot](documentation/html-validation-examples.png) | Pass: No Errors |
-| Checkout | n/a | ![screenshot](documentation/html-validation-checkout.png) | Pass: No Errors |
-| Checkout Success | n/a | ![screenshot](documentation/html-validation-checkout-success.png) | Pass: No Errors |
+| Checkout | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpurple-hex-studios.herokuapp.com%2Fcheckout%2F)| ![screenshot](documentation/html-validation-checkout.png) | Pass: No Errors |
 | Bag | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpurple-hex-studios.herokuapp.com%2Fbag%2F) | ![screenshot](documentation/html-validation-bag.png) | Pass: No Errors |
 | Profile | n/a | ![screenshot](documentation/html-validation-profile.png) | Pass: No Errors |
 | Login | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fpurple-hex-studios.herokuapp.com%2Faccounts%2Flogin%2F) | ![screenshot](documentation/html-validation-login.png) | Pass: No Errors |
