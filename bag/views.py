@@ -1,13 +1,16 @@
-from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
+from django.shortcuts import render, redirect, reverse, HttpResponse,  \
+    get_object_or_404
 from django.contrib import messages
 from services.models import Service
 
 # Create your views here.
 
+
 def view_bag(request):
     """ A view that renders the bag contents page """
 
     return render(request, 'bag/bag.html')
+
 
 def add_to_bag(request, item_id):
     """ Add a quantity of the specified service to the shopping bag """
@@ -37,11 +40,12 @@ def adjust_bag(request, item_id):
 
     if quantity > 0:
         bag[item_id] = quantity
-        messages.success(request, f'Updated {service.name} quantity to {bag[item_id]}')
+        messages.success(request,
+                         f'Updated {service.name} quantity to {bag[item_id]}'
+                         )
     else:
         bag.pop(item_id)
         messages.success(request, f'Removed {service.name} from your bag')
-
 
     request.session['bag'] = bag
     return redirect(reverse('view_bag'))
