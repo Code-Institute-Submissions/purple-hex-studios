@@ -157,7 +157,6 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | --- | --- | --- | --- |
 | settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/purple_hex/settings.py) | ![screenshot](documentation/py-validation-settings.png) | E501 line too long |
 | Purple Hex urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/purple_hex/urls.py) | ![screenshot](documentation/py-validation-urls.png) | Pass: No Errors |
-| Purple Hex wsgi.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/purple_hex/wsgi.py) | ![screenshot](documentation/py-validation-wsgi.png) | Pass: No Errors |
 | Services admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/services/admin.py) | ![screenshot](documentation/py-validation-services-admin.png) | Pass: No Errors |
 | Services apps.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/services/apps.py) | ![screenshot](documentation/py-validation-services-apps.png) | Pass: No Errors |
 | Services forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/purple_hex/wsgi.py) | ![screenshot](documentation/py-validation-services-forms.png) | Pass: No Errors |
