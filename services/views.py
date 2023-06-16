@@ -31,7 +31,7 @@ def all_services(request):
                                )
                 return redirect(reverse('services'))
 
-            queries = Q(name__icontains=query) |  Q(description__icontains=query), # noqa
+            queries = Q(name__icontains=query) | Q(description__icontains=query), # noqa
             services = services.filter(queries)
 
     context = {
