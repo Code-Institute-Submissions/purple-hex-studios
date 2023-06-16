@@ -31,7 +31,7 @@ def all_services(request):
                                )
                 return redirect(reverse('services'))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(name__icontains=query) |  Q(description__icontains=query),  # noqa
             services = services.filter(queries)
 
     context = {
@@ -70,7 +70,7 @@ def add_service(request):
             return redirect(reverse('service_detail', args=[service.id]))
         else:
             messages.error(request,
-                           'Failed to add service. Please ensure the form is valid.'
+                           'Failed to add service. Please ensure the form is valid.',  # noqa
                            )
     else:
         form = ServiceForm()
@@ -112,7 +112,7 @@ def edit_service(request, service_id):
             messages.success(request, 'Successfully updated service')
             return redirect(reverse('service_detail', args=[service_id]))
         else:
-            messages.error(request, 'Failed to update service. Please ensure the form is valid.')
+            messages.error(request, 'Failed to update service. Please ensure the form is valid.'),  # noqa
     else:
         form = ServiceForm(instance=service)
         messages.info(request, f'You are editing {service.name}')
