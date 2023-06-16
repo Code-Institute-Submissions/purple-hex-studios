@@ -8,6 +8,7 @@ from .forms import ServiceForm
 
 # Create your views here.
 
+
 def all_services(request):
     """ A view to show all services, including sorting and search queries """
 
@@ -25,9 +26,11 @@ def all_services(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(request,
+                               "You didn't enter any search criteria!"
+                               )
                 return redirect(reverse('services'))
-            
+
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             services = services.filter(queries)
 
@@ -51,6 +54,7 @@ def service_detail(request, service_id):
 
     return render(request, 'services/service_detail.html', context)
 
+
 @login_required
 def add_service(request):
     """ Add a Service to the store """
@@ -65,10 +69,12 @@ def add_service(request):
             messages.success(request, 'Successfully added service')
             return redirect(reverse('service_detail', args=[service.id]))
         else:
-            messages.error(request, 'Failed to add service. Please ensure the form is valid.')
+            messages.error(request,
+                           'Failed to add service. Please ensure the form is valid.'
+                           )
     else:
         form = ServiceForm()
-        
+
     template = 'services/add_service.html'
     context = {
         'form': form,
@@ -76,6 +82,7 @@ def add_service(request):
     }
 
     return render(request, template, context)
+
 
 @login_required
 def delete_service(request, service_id):
@@ -88,6 +95,7 @@ def delete_service(request, service_id):
     service.delete()
     messages.success(request, 'Service deleted')
     return redirect(reverse('services'))
+
 
 @login_required
 def edit_service(request, service_id):
