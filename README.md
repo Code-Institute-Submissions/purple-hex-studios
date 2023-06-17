@@ -4,14 +4,6 @@ Purple Hex Studios is a recording studio offering professional audio services, f
 Users will have the ability to sign-up and purchase any of the 'services'offered on site. 
 
 
-https://ui.dev/amiresponsive?url=https://purple-hex-studios.herokuapp.com
-
-Screenshots for the README and testing should not be inside of `assets/` or `static/` image folders.
-(reminder: `assets/` and `static/` are for files used on the live site, not documentation)
-Consider adding a new folder called `documentation`, and add the amiresponsive screenshot inside of that folder.
-To add the image into your README, use this format:
-(assuming you have a new folder called `documentation` with an image called "mockup.png")
-
 ![screenshot](documentation/mockup.png)
 
 
@@ -30,7 +22,7 @@ I used [coolors.co](https://coolors.co/e84610-009fe3-4a4a4f-445261-d63649-e6ecf0
 
 ### Typography
 
-- [Chakra Petch](https://fonts.google.com/specimen/Lato) was used for all text.
+- [Chakra Petch](https://fonts.google.com/specimen/Chakra+Petch?query=chakr) was used for all text.
 
 - [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer.
 
