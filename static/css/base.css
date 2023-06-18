@@ -139,7 +139,7 @@ nav.bg-dark {
     .container {
       max-width: 80%;
     }
-  }
+}
   
   /* fixed top navbar only on medium and up */
   @media (min-width: 992px) {
@@ -150,11 +150,12 @@ nav.bg-dark {
           left: 0;
           z-index: 1030;
       }
+  }
   
       .header-container {
           padding-top: 164px;
       }
-  }
+  
   
   /* pad the top a bit when navbar is collapsed on mobile */
   @media (max-width: 991px) {
