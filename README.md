@@ -526,16 +526,8 @@ You can fork this repository by using the following steps:
 | Source | Location | Notes |
 | --- | --- | --- |
 | [Markdown Builder](https://traveltimn.github.io/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
-| [Chris Beams](https://chris.beams.io/posts/git-commit) | version control | "How to Write a Git Commit Message" |
-| [W3Schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) | entire site | responsive HTML/CSS/JS navbar |
-| [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp) | contact page | interactive pop-up (modal) |
-| [W3Schools](https://www.w3schools.com/css/css3_variables.asp) | entire site | how to use CSS :root variables |
-| [Flexbox Froggy](https://flexboxfroggy.com/) | entire site | modern responsive layouts |
-| [Grid Garden](https://cssgridgarden.com) | entire site | modern responsive layouts |
-| [StackOverflow](https://stackoverflow.com/a/2450976) | quiz page | Fisher-Yates/Knuth shuffle in JS |
-| [YouTube](https://www.youtube.com/watch?v=YL1F4dCUlLc) | leaderboard | using `localStorage()` in JS for high scores |
-| [YouTube](https://www.youtube.com/watch?v=u51Zjlnui4Y) | PP3 terminal | tutorial for adding color to the Python terminal |
-| [strftime](https://strftime.org) | CRUD functionality | helpful tool to format date/time from string |
+| [W3Schools](https://www.w3schools.com/howto/howto_css_glowing_text.asp) | Header | Glowing text in header |
+| [WhiteNoise](http://whitenoise.evans.io) | entire site | hosting static files on Heroku temporarily |
 | [WhiteNoise](http://whitenoise.evans.io) | entire site | hosting static files on Heroku temporarily |
 
 ### Media
