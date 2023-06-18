@@ -96,19 +96,26 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
     - This feature allows site admin and shop owners to create services for the store.  
 
-![screenshot](documentation/feature03.png)
+![screenshot](documentation/feature04.png)
+
+- **Profile**
+
+    - This feature allows users to create a profile once signed up to save delivery information.  
+
+![screenshot](documentation/feature05.png)
 
 - **Services**
 
     - This page displays the services for sale on the store. Users can filter between 'All Services' or the specific categories they are looking for. Users can select an item, taking it to a 'service detail' page where they can find more information about each service. For site owners, this page also provides the option to edit and delete services.
 
-![screenshot](documentation/feature03.png)
+![screenshot](documentation/feature06.png)
+![screenshot](documentation/feature07.png)
 
 - **Contact**
 
     - This section provides users a form to contact the site.  
 
-![screenshot](documentation/feature03.png)
+![screenshot](documentation/feature08.png)
 
 
 ### Future Features
@@ -118,9 +125,6 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 
 ## Tools & Technologies Used
-
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 - [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
@@ -533,15 +537,16 @@ You can fork this repository by using the following steps:
 
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
-| [Unsplash](https://unsplash.com) | Service page | image | sample of fake Services |
-| [Unsplash](https://unsplash.com) | Service page | image | sample of fake Services |
-| [Unsplash](https://unsplash.com) | Service page | image | sample of fake Services |
-| [Unsplash](https://unsplash.com) | Service page | image | sample of fake Services |
-| [Unsplash](https://unsplash.com) | Service page | image | sample of fake Services |
-| [Unsplash](https://unsplash.com) | Service page | image | sample of fake Services |
-| [Unsplash](https://unsplash.com) | Service page | image | sample of fake Services |
-| [Pixabay](https://pixabay.com) | gallery page | image | group of photos for gallery |
+| [Unsplash](https://unsplash.com/photos/-qFWOJEEQh4) | Service page | image | sample of fake Services |
+| [Unsplash](https://unsplash.com/photos/UZFlMWqdqHg) | Service page | image | sample of fake Services |
+| [Unsplash](https://unsplash.com/photos/MfdQgUjZP6M) | Service page | image | sample of fake Services |
+| [Unsplash](https://unsplash.com/photos/OaPksPcVp50) | Service page | image | sample of fake Services |
+| [Unsplash](https://unsplash.com/photos/bG8U3kaZltE) | Service page | image | sample of fake Services |
+| [Unsplash](https://unsplash.com/photos/0cbLoqUyz28) | Service page | image | sample of fake Services |
+| [Unsplash](https://unsplash.com/photos/i2BcaGXomv0) | Service page | image | sample of fake Services |
 | [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
+
+All other images by [Thomg1](https://github.com/ThomG1)
 
 ### Acknowledgements
 
