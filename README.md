@@ -117,6 +117,12 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 ![screenshot](documentation/feature08.png)
 
+- **Examples**
+
+    - This section provides users a form to contact the site.  
+
+![screenshot](documentation/feature09.png)
+
 
 ### Future Features
 
