@@ -40,7 +40,7 @@ This will give you a custom URL as well, which you can use on your testing docum
 It makes it easier to return back to the page to validate it again in the future.
 The URL will look something like this:
 
-- https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2FThomG1.github.io%2Fpurple-hex-studios
+- https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fpurple-hex-studios.herokuapp.com
 
 If you have multiple CSS files, then individual [validation by input](https://jigsaw.w3.org/css-validator/#validate_by_input)
 is recommended for the additional CSS files.
@@ -57,9 +57,7 @@ Sample CSS code validation documentation (tables are extremely helpful!):
 
 | File | Jigsaw URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| style.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2FThomG1.github.io%2Fpurple-hex-studios) | ![screenshot](documentation/css-validation-style.png) | Pass: No Errors |
-| checkout.css | n/a | ![screenshot](documentation/css-validation-checkout.png) | Pass: No Errors |
-| x | x | x | repeat for all remaining CSS files |
+| style.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fpurple-hex-studios.herokuapp.com) | ![screenshot](documentation/css-validation-style.png) | Pass: No Errors |
 
 ### JavaScript
 
@@ -82,7 +80,7 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | Purple Hex urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/purple_hex/urls.py) | ![screenshot](documentation/py-validation-urls.png) | Pass: No Errors |
 | Services admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/services/admin.py) | ![screenshot](documentation/py-validation-services-admin.png) | Pass: No Errors |
 | Services apps.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/services/apps.py) | ![screenshot](documentation/py-validation-services-apps.png) | Pass: No Errors |
-| Services forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/purple_hex/wsgi.py) | ![screenshot](documentation/py-validation-services-forms.png) | Pass: No Errors |
+| Services forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/services/forms.py) | ![screenshot](documentation/py-validation-services-forms.png) | Pass: No Errors |
 | Services models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/services/models.py) | ![screenshot](documentation/py-validation-services-models.png) | Pass: No Errors |
 | Services urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/services/urls.py) | ![screenshot](documentation/py-validation-services-urls.png) | Pass: No Errors |
 | Services views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/services/views.py) | ![screenshot](documentation/py-validation-services-views.png) | Pass: No Errors |
@@ -90,6 +88,7 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | Bag contexts.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/bag/contexts.py) | ![screenshot](documentation/py-validation-bag-contexts.png) | Pass: No Errors |
 | Bag urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/bag/urls.py) | ![screenshot](documentation/py-validation-bag-urls.png) | Pass: No Errors |
 | Bag views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/bag/views.py) | ![screenshot](documentation/py-validation-bag-views.png) | Pass: No Errors |
+| Bag bag_tools.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/bag/templatetags/bag_tools.py) | ![screenshot](documentation/py-validation-bag-views.png) | Pass: No Errors |
 | Checkout admin.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/checkout/admin.py) | ![screenshot](documentation/py-validation-checkout-admin.png) | Pass: No Errors |
 | Checkout apps.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/checkout/apps.py) | ![screenshot](documentation/py-validation-checkout-apps.png) | Pass: No Errors |
 | Checkout forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/checkout/forms.py) | ![screenshot](documentation/py-validation-checkout-forms.png) | Pass: No Errors |
@@ -116,35 +115,6 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | Examples models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/examples/models.py) | ![screenshot](documentation/py-validation-examples-models.png) | Pass: No Errors |
 | Examples urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/examples/urls.py) | ![screenshot](documentation/py-validation-examples-urls.png) | Pass: No Errors |
 | Examples views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ThomG1/purple-hex-studios/main/examples/views.py) | ![screenshot](documentation/py-validation-examples-views.png) | Pass: No Errors |
-
-
-
-| x | x | x | repeat for all remaining Python files |
-
-**IMPORTANT**: Django settings.py
-
-The Django settings.py file comes with 4 lines that are quite long, and will throw the `E501 line too long` error.
-This is default behavior, but can be fixed by adding `# noqa` to the end of those lines.
-
-Example:
-
-```python
-AUTH_PASSWORD_VALIDATORS = [
-    {
-        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator",  # noqa
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator",  # noqa
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator",  # noqa
-    },
-    {
-        "NAME": "django.contrib.auth.password_validation.NumericPasswordValidator",  # noqa
-    },
-]
-```
-
 
 ## Browser Compatibility
 
@@ -179,7 +149,6 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | Services | Desktop | ![screenshot](documentation/lighthouse-services-desktop.png) | Few warnings |
 | Bag | Desktop | ![screenshot](documentation/lighthouse-bag-desktop.png) | Minor Warnings |
 | Checkout | Desktop | ![screenshot](documentation/lighthouse-checkout-desktop.png) | Slow response time due to large images |
-| x | x | x | repeat for any other tested pages/sizes |
 
 ## Defensive Programming
 
@@ -269,7 +238,23 @@ Defensive programming was manually tested with the below user acceptance testing
 | As a site administrator, I should be able to delete exisiting services, so that I can meet the needs of the studio. | ![screenshot](documentation/feature11.png) |
 | As a site administrator, I should be able to keep track of my orders, so that I can analyse the data. | ![screenshot](documentation/feature12.png) |
 
+## Bugs
 
-### GitHub **Issues**
+### Fixed Bugs
+
+- *The Contact could not be created because the data didn't validate.*
+
+![screenshot of Contact error](documentation/contact-error.png)
+
+When submitting the Contact form, this error happened. To fix this, I added the missing `()` on the views.py file for `is_valid()`
+
+```python
+if form.is_valid():
+    form.save()
+    messages.success(request, 'Message sent')
+    return redirect(reverse("contact"))
+```
+
+### Remaining Bugs
 
 There are no remaining bugs that I am aware of.
