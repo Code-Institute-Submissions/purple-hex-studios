@@ -45,7 +45,7 @@ nav.bg-dark {
     animation: glow 1s ease-in-out infinite alternate;
   }
   
-  @-webkit-keyframes glow {
+@keyframes glow {
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
     }
@@ -58,9 +58,7 @@ nav.bg-dark {
     height: 550px;
     width: 367px;
     margin-right:30px;
-    border: 2px solid #ffffff;
-    
-    
+    border: 2px solid #ffffff;   
 }
 
 .btn-black {
@@ -131,7 +129,6 @@ nav.bg-dark {
     overflow-y: auto;
 }
 
-
 /* Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -171,7 +168,6 @@ nav.bg-dark {
   footer {
     margin: 0;
     background-color: rgba(52, 58, 64, 0.90) !important;
-    height: 
 }
 
 .social-links {
