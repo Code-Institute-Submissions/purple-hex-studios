@@ -1,5 +1,4 @@
-from django.shortcuts import render, HttpResponseRedirect
-from django.http import HttpResponseRedirect
+from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
 from .forms import ContactForm
 
@@ -11,23 +10,16 @@ def contact(request):
     and contact form submission
     """
 
+    form = ContactForm(request.POST or None)
     if request.method == 'POST':
-        form = ContactForm(request.POST)
-        if form.is_valid:
+        if form.is_valid():
             form.save()
             messages.success(request, 'Message sent')
-            return HttpResponseRedirect('/contact?submitted=True')
+            return redirect(reverse("contact"))
 
         else:
-            form = ContactForm()
             messages.warning(request, 'Message failed')
 
-    else:
-        form = ContactForm()
-        if 'submitted' in request.GET:
-            form = ContactForm()
-
-    form = ContactForm()
     template = 'contact/contact.html'
     context = {
         'form': form,
