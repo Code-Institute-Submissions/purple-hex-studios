@@ -63,7 +63,6 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | --- | --- |
 | Home | ![screenshot](documentation/wireframes/home.png) |
 | Services | ![screenshot](documentation/wireframes/services.png) |
-| Service Detail | ![screenshot](documentation/wireframes/serivce-detail.png) |
 | Contact | ![screenshot](documentation/wireframes/contact.png) |
 | Examples | ![screenshot](documentation/wireframes/examples.png) |
 | Bag | ![screenshot](documentation/wireframes/bag.png) |
