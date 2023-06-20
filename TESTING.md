@@ -200,18 +200,18 @@ Defensive programming was manually tested with the below user acceptance testing
 
 | User Story | Screenshot |
 | --- | --- |
-| As a new site user, I would like to easily navigate the site, so that I can explore what is available. | ![screenshot](documentation/feature01.png) |
-| As a new site user, I would like to browse what services are on offer, so that I can consider a purchase. | ![screenshot](documentation/feature02.png) |
+| As a new site user, I would like to easily navigate the site, so that I can explore what is available. | ![screenshot](documentation/feature03.png) |
+| As a new site user, I would like to browse what services are on offer, so that I can consider a purchase. | ![screenshot](documentation/feature06.png) |
 | As a new site user, I would like to easily make a purchase, so that I can progress towards what I want. | ![screenshot](documentation/feature03.png) |
-| As a new site user, I would like to enjoy the original aesthetic of the application, so that I can return and shop again. | ![screenshot](documentation/feature04.png) |
-| As a returning site user, I would like to save my details, so that I can make quicker purchases in future. | ![screenshot](documentation/feature05.png) |
-| As a returning site user, I would like to contact the site, so that I can answer any queries. | ![screenshot](documentation/feature06.png) |
-| As a returning site user, I would like to explore another cateogory of service, so that I can expand what I'm creating. | ![screenshot](documentation/feature07.png) |
-| As a returning site user, I would like to explore the sites previous work, so that I can inform my future decisions.| ![screenshot](documentation/feature08.png) |
-| As a site administrator, I should be able to add new services to my site, so that I can interest new customers. | ![screenshot](documentation/feature09.png) |
-| As a site administrator, I should be able to ammend existing services, so that I can meet the needs of the studio. | ![screenshot](documentation/feature10.png) |
-| As a site administrator, I should be able to delete exisiting services, so that I can meet the needs of the studio. | ![screenshot](documentation/feature11.png) |
-| As a site administrator, I should be able to keep track of my orders, so that I can analyse the data. | ![screenshot](documentation/feature12.png) |
+| As a new site user, I would like to enjoy the original aesthetic of the application, so that I can return and shop again. | ![screenshot](documentation/browser-chrome.png) |
+| As a returning site user, I would like to save my details, so that I can make quicker purchases in future. | ![screenshot](documentation/profile.png) |
+| As a returning site user, I would like to contact the site, so that I can answer any queries. | ![screenshot](documentation/feature08.png) |
+| As a returning site user, I would like to explore another cateogory of service, so that I can expand what I'm creating. | ![screenshot](documentation/service-drop.png) |
+| As a returning site user, I would like to explore the sites previous work, so that I can inform my future decisions.| ![screenshot](documentation/feature09.png) |
+| As a site administrator, I should be able to add new services to my site, so that I can interest new customers. | ![screenshot](documentation/feature04.png) |
+| As a site administrator, I should be able to ammend existing services, so that I can meet the needs of the studio. | ![screenshot](documentation/edit-service.png) |
+| As a site administrator, I should be able to delete exisiting services, so that I can meet the needs of the studio. | ![screenshot](documentation/delete.png) |
+| As a site administrator, I should be able to keep track of my orders, so that I can analyse the data. | ![screenshot](documentation/orders.png) |
 
 ## Bugs
 
