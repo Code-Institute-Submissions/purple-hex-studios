@@ -121,9 +121,9 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | --- | --- | --- | --- |
 | Home | Desktop | ![screenshot](documentation/lighthouse-home-desktop.png) | Few warnings |
 | Contact | Desktop | ![screenshot](documentation/lighthouse-contact-desktop.png) | Some minor warnings |
-| Services | Desktop | ![screenshot](documentation/lighthouse-services-desktop.png) | Few warnings |
+| Services | Desktop | ![screenshot](documentation/lighthouse-services-desktop.png) | Slow response time due to large images |
 | Bag | Desktop | ![screenshot](documentation/lighthouse-bag-desktop.png) | Minor Warnings |
-| Checkout | Desktop | ![screenshot](documentation/lighthouse-checkout-desktop.png) | Slow response time due to large images |
+| Checkout | Desktop | ![screenshot](documentation/lighthouse-checkout-desktop.png) | Minor Warnings |
 
 ## Defensive Programming
 
