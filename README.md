@@ -127,6 +127,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 
 - CRUD functionality for 'Examples' page. 
 - An option for customers to select whether they would prefer a digital or hard copy of project. 
+- Add links to 'Examples' page, this is already included in the model and just requires adding in through the template. 
 
 
 ## Tools & Technologies Used
